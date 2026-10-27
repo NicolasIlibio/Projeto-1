@@ -1,0 +1,51 @@
+<!DOCTYPE html>         
+<html>
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/joy-children" rel="stylesheet">
+        <link  rel="shortcut icon" href="imagens/calculatortron.webp" type="image/png">
+        <title>CALCULADORA></title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/randome" rel="stylesheet">
+                
+    </head>
+    <body class="centralizar">
+        <img src="imagens/redtitulo2.png" type="image/png" height="200" width="570">
+    
+        <H1 style="color: whitesmoke;">CALCULATOR</H1>
+        <div class="centralizar" id="conteudo_calculadora">
+            <div id="conteudo_visor">
+                <input type="text" id="visor" class="efeito.visor"></input>
+            </div>
+            <br>
+            <div id="conteudo_botoes">
+                <div id="conteudo_numeros">
+                    <button class="" onclick="adicionarValorVisor(0)";>0</button>
+                    <button onclick="adicionarValorVisor(1)";>1</button>
+                    <button onclick="adicionarValorVisor(2)";>2</button>
+                    <button onclick="adicionarValorVisor(3)";>3</button>
+                    <button onclick="adicionarValorVisor(4)";>4</button>
+                    <button onclick="adicionarValorVisor(5)";>5</button>
+                    <button onclick="adicionarValorVisor(6)";>6</button>
+                    <button onclick="adicionarValorVisor(7)";>7</button>
+                    <button onclick="adicionarValorVisor(8)";>8</button>
+                    <button onclick="adicionarValorVisor(9)";>9</button>
+                    <button style="width: 80px;" onclick="adicionarValorVisor('.')";>.</button>
+                </div>
+                <div id="conteudo_operacoes">
+                    <button onclick="adicionarValorVisor('+');">+</button>
+                    <button onclick="adicionarValorVisor('-');">-</button>
+                    <button onclick="adicionarValorVisor('*');">*</button>
+                    <button onclick="adicionarValorVisor('/');">/</button>
+                </div>
+            </div>
+            <div id="conteudo_acoes">
+                <button onclick="calcular ();">=</button>
+                <button onclick="limparValorVisor();">limpar</button>
+            </div>
+            <br><br>
+            <div id="conteudo_logs"></div>
+        </div>
+        <script src="calculadora.js"></script>
+    </body>
+</html>
+    

@@ -1,0 +1,148 @@
+body{
+    height:98vh;
+    width: 98vw;
+    background: url("imagens/fundooficialreddead.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button{
+    color: black; 
+    background-color: tomato;
+    min-width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding-block-end:1px;
+    padding-block-start:1px;
+    padding-inline-end:6px;
+    padding-inline-start:6px;
+    border-radius: 2px;
+    font-family: 'Randome', sans-serif;
+                                                
+
+}
+
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo_botoes{
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo_numeros {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+#conteudo_operacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo_acoes{
+    display: flex;
+    width: 160px;
+}
+
+#conteudo_acoes button{
+    width: 80px;
+}
+
+#conteudo_logs{
+    width: 400px;
+    height: 150px;
+    overflow: auto;
+    box-shadow: inset 0 0 5px 2px #000;
+    padding: 0 10px 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Randome', sans-serif;
+    border: 5px;
+    color:whitesmoke;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+
+#visor {
+    height: 35px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 0 5px 5px rgb(78, 25, 25);
+    background: linear-gradient(170deg,tomato,tomato,tomato);
+    color: black;
+    border: 13px;
+    border-color:black;
+    text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: goldenrod; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: goldenrod; 
+  }
+
+
+.tiro {
+      transform: translateX(-50%) translateY(-50%);
+      width: 30px;  /* Ajuste o tamanho aqui */
+      height: 30px;
+      pointer-events: none; /* Evita que a imagem atrapalhe o clique */
+  }
+
+@keyframes treme-treme {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, 2px); }
+  80% { transform: translate(2px, -1px); }
+  100% { transform: translate(0, 0); }
+}
+
+.tremer {
+  animation: treme-treme 0.15s ease-in-out;
+}
+
+
+
+    

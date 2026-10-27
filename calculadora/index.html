@@ -1,0 +1,49 @@
+<!DOCTYPE html>         
+<html>
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/joy-children" rel="stylesheet">
+        <link  rel="shortcut icon" href="imagens/reddead2icone.png" type="image/png">
+        <title>CALCULADORA</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/randome" rel="stylesheet">
+                
+    </head>
+    <body class="centralizar">
+        <img src="imagens/reddeadscalculatortitulo (2)png.png" type="image/png" height="450">
+        <div class="centralizar" id="conteudo_calculadora">
+            <div id="conteudo_visor">
+                <input type="text" id="visor" class="efeito.visor"></input>
+            </div>
+            <br>
+            <div id="conteudo_botoes">
+                <div id="conteudo_numeros">
+                    <button class="botao" onclick="adicionarValorVisor(0);atirar('imagens/tiro.webp','myinstants.mp3');">0</button>
+                    <button class="botao" onclick="adicionarValorVisor(1);atirar('imagens/tiro.webp','myinstants.mp3');">1</button>
+                    <button class="botao" onclick="adicionarValorVisor(2);atirar('imagens/tiro.webp','myinstants.mp3');">2</button>
+                    <button class="botao" onclick="adicionarValorVisor(3);atirar('imagens/tiro.webp','myinstants.mp3');">3</button>
+                    <button class="botao" onclick="adicionarValorVisor(4);atirar('imagens/tiro.webp','myinstants.mp3');">4</button>
+                    <button class="botao" onclick="adicionarValorVisor(5);atirar('imagens/tiro.webp','myinstants.mp3');">5</button>
+                    <button class="botao" onclick="adicionarValorVisor(6);atirar('imagens/tiro.webp','myinstants.mp3');">6</button>
+                    <button class="botao" onclick="adicionarValorVisor(7);atirar('imagens/tiro.webp','myinstants.mp3');">7</button>
+                    <button class="botao" onclick="adicionarValorVisor(8);atirar('imagens/tiro.webp','myinstants.mp3');">8</button>
+                    <button class="botao" onclick="adicionarValorVisor(9);atirar('imagens/tiro.webp','myinstants.mp3');">9</button>
+                    <button class="botao" style="width: 80px;" onclick="adicionarValorVisor('.');atirar('imagens/tiro.webp','myinstants.mp3');">.</button>
+                </div>
+                <div id="conteudo_operacoes">
+                    <button class="botao" onclick="adicionarValorVisor('+');atirar('imagens/tiro.webp','myinstants.mp3');">+</button>
+                    <button class="botao" onclick="adicionarValorVisor('-');atirar('imagens/tiro.webp','myinstants.mp3');">-</button>
+                    <button class="botao" onclick="adicionarValorVisor('*');atirar('imagens/tiro.webp','myinstants.mp3');">*</button>
+                    <button class="botao" onclick="adicionarValorVisor('/');atirar('imagens/tiro.webp','myinstants.mp3');">/</button>
+                </div>
+            </div>
+            <div id="conteudo_acoes">
+                <button class="botao" onclick="calcular ();atirar('imagens/high-honor.png','rdr2-high-honor.mp3');">=</button>
+                <button class="botao" onclick="limparValorVisor();atirar('imagens/lowhonor.png','rdr2-low-honour-sound.mp3');">limpar</button>
+            </div>
+            <br><br>
+            <div id="conteudo_logs"></div>
+        </div>
+        <script src="calculadora.js"></script>
+    </body>
+</html>
+    
